@@ -16,7 +16,7 @@ Los asistentes son formularios utilizados para obtener información de entrada d
 
 Así será su asistente:
 
-![ToDoTaskCreatingWizard](/img/7-01.jpg)
+![ToDoTaskCreatingWizard](img/7-01.jpg)
 
 Podrá empezar creando un nuevo módulo addon para la función `todo_wizard`.
 

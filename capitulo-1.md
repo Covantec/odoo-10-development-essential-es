@@ -274,7 +274,7 @@ De forma predeterminada, las instancias Odoo escuchan en el puerto 8069, por lo 
 a `http://<dirección-servidor>:8069`, llegará a estas instancias. Cuando lo acceda por primera vez, nos
 muestra un asistente para crear una nueva base de datos, como se muestra en la siguiente captura de pantalla:
 
-![Database](/img/1-01.jpg)
+![Database](img/1-01.jpg)
 
 Como desarrolladores, necesitará trabajar con varias bases de datos, así que es más convenientes más
 conveniente crearlos desde la línea de comandos, así que aprenderá cómo hacerlo. Ahora presione **Ctrl + C**
@@ -329,7 +329,7 @@ documentación del software de virtualización elegido.
 La cuenta de administrador predeterminada es `admin` con su contraseña `admin`. Al iniciar sesión, se le presenta
 el menú  **Apps**, que muestra las aplicaciones disponibles:
 
-![Database](/img/1-02.jpg)
+![Database](img/1-02.jpg)
 
 Siempre que desee detener la instancia del servidor Odoo y volver a la línea de comandos, presione **Ctrl + C** en
 el indicador de bash. Al presionar la tecla de flecha hacia arriba le llevará el comando de shell anterior, por lo
@@ -568,12 +568,12 @@ Puedes descargar los archivos de códigos de ejemplo para todos los libros Packt
 Para acceder a los archivos desde *Windows*, puede asignar una unidad de red para la ruta `\\<my-server-name>\odoo`
 utilizando el nombre de usuario y la contraseña específicos definidos con `smbpasswd` Al intentar iniciar sesión con el usuario `odoo`, podría encontrar problemas con *Windows* agregando el dominio del equipo al nombre de usuario (por ejemplo, `MYPC\odoo`). Para evitar esto, utilice un dominio vacío añadiendo un carácter `\` al inicio de sesión (por ejemplo, `\odoo`):
 
-![Directory](/img/1-03.jpg)
+![Directory](img/1-03.jpg)
 
 
 Si ahora abre la unidad asignada con el Explorador de *Windows*, podrá acceder y editar el contenido del directorio home del usuario `odoo`:
 
-![Home](/img/1-04.jpg)
+![Home](img/1-04.jpg)
 
 Odoo incluye un par de herramientas que son muy útiles para los desarrolladores, y va a hacer uso de ellas a lo largo del libro. Son características técnicas y el modo de desarrollo. Estos están desactivados por defecto, por lo que este es un buen momento para aprender a habilitarlos.
 
@@ -583,11 +583,11 @@ Las herramientas de desarrollo proporcionan una configuración y funciones avanz
 
 Estas herramientas vienen deshabilitadas de forma predeterminada y, para habilitarlas, debe iniciar sesión como administrador. En la barra de menú superior, seleccione el menú **Settings**. En la parte inferior derecha, debajo de la versión Odoo, encontrará dos opciones para habilitar el modo de desarrollo; cualquiera de ellas habilitará los menús **Debug** y **Technical**. La segunda opción, **Activate the developer mode (whit assest)**, también deshabilita la minificación de JavaScript y CSS utilizada por el cliente web, facilitando la depuración del comportamiento del cliente:
 
-![Depuracion](/img/1-05.jpg)
+![Depuracion](img/1-05.jpg)
 
 Después de eso, la página se vuelve a cargar y debería verse un icono de error en la barra de menú superior, justo antes del avatar y nombre de usuario de la sesión que proporciona las opciones de modo de depuración. Y en la opción **Settings** en el menú superior, deberá ver una nueva sección del menú **Technical** que da acceso a muchos internos de la instancia de Odoo:
 
-![Cliente](/img/1-06.jpg)
+![Cliente](img/1-06.jpg)
 
 
 #### Consejo
@@ -653,7 +653,7 @@ Después de actualizar la lista de módulos, puede confirmar que los nuevos mód
 
 Ten en cuenta que la segunda opción de menú **App Store** muestra la lista de módulos del almacén de aplicaciones Odoo en lugar de los módulos locales:
 
-![Apps](/img/1-07.jpg)
+![Apps](img/1-07.jpg)
 
 
 ## Resumen

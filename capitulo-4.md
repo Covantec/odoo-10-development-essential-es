@@ -22,7 +22,7 @@ Para inspeccionar los mapeos existentes, ve a la sección **Technical** del men�
 
 Por ejemplo, si visita la lista de **External identifiers** y lo filtra por el módulo `todo_app`, verá los identificadores externos generados por el módulo creado anteriormente:
 
-![Externalidentifiers](/img/4-01.jpg)
+![Externalidentifiers](img/4-01.jpg)
 
 Podrá ver que los identificadores externos tienen una etiqueta **ID Completa**. Observa cómo se compone del nombre del módulo y el nombre del identificador unido por un punto, por ejemplo, `todo_app.action_todo_task`.
 
@@ -32,7 +32,7 @@ Cuando se utiliza un identificador externo en un archivo de datos, puedes elegir
 
 En la parte superior de la lista, tiene el identificador completo `todo_app.action_todo_task`. Esta es la acción de menú que creo para el módulo, al que también se hace referencia en el ítem de menú correspondiente. Al hacer clic en él, va a la vista de formulario con sus detalles; El identificador externo `action_todo_task` en el módulo `todo_app` mapea un ID de registro específico en el modelo `ir.actions.act_window`, `72` en este caso:
 
-![Todo](/img/4-02.jpg)
+![Todo](img/4-02.jpg)
 
 Además de proporcionar una forma para que los registros hagan referencia fácilmente a otros registros, los identificadores externos también le permiten evitar la duplicación de datos en las importaciones repetidas. Si el identificador externo ya está presente, se actualizará el registro existente; No es necesario crear un nuevo registro. Es por esto que en las actualizaciones de módulos posteriores, los registros cargados previamente se actualizan en vez de duplicarse.
 
@@ -46,7 +46,7 @@ Para encontrar el identificador externo de un registro de datos, en la vista de 
 
 Como ejemplo, para buscar el ID de `demo user`, puede navegar a la vista de formulario, en **Settings | Users** y seleccione la opción **View Metadata** y esto se mostrará:
 
-![Metadata](/img/4-03.jpg)
+![Metadata](img/4-03.jpg)
 
 Para hallar el identificador externo para elementos de vista, como formulario, árbol, búsqueda o acción, el menú **Developer** también es una buena fuente de ayuda. Para ello, puede utilizar la opción **Manage Views** o abrir la información para la vista deseada mediante la opción **Edit <view type>**. A continuación, selecciona la opción **View metadata**.
 
@@ -72,7 +72,7 @@ La opción **Export** les lleva a un formulario de diálogo, donde puede elegir 
 
 El formato de exportación puede ser CSV o Excel. Preferirá un archivo CSV para obtener una mejor comprensión del formato de exportación. A continuación, seleccionará las columnas que querrá exportar y haga clic en el botón **Export to File**. Esto iniciará la descarga de un archivo con los datos exportados:
 
-![Minion](/img/4-05.jpg)
+![Minion](img/4-05.jpg)
 
 Si siguió estas instrucciones y selecciono los campos mostrados en la captura de pantalla anterior, deberá terminar con un archivo de texto CSV similar a este:
 

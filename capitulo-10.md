@@ -55,7 +55,7 @@ Por lo general, implementaría el informe en su módulo de complemento de la apl
 
 Su informe se verá así:
 
-![Report](/img/10-01.jpg)
+![Report](img/10-01.jpg)
 
 Usted nombrará este nuevo módulo addon `todo_report`. Lo primero que debe hacer es crear un archivo `__init__.py` vacío y el archivo de manifiesto `__manifest__.py`:
 
