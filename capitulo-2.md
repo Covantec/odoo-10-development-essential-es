@@ -172,7 +172,7 @@ Asegúrate de que su sesión de cliente web está funcionando con la base de dat
 
 La opción **Aplicaciones** les muestra la lista de módulos disponibles. De forma predeterminada, muestra sólo los módulos de aplicación. Ya que ha creado un módulo de aplicación, no necesita eliminar ese filtro para verlo. Escribe `todo` en la búsqueda y debes ver su nuevo módulo, listo para ser instalado:
 
-![Installed]file:img/2-01.jpg)
+![Installed](/img/2-01.jpg)
 
 Ahora haz clic en el botón **Instalar** del módulo y ¡está listos!
 
@@ -267,7 +267,7 @@ from . Importar todo_modelo
 
 No verá ninguna opción de menú para acceder a este nuevo modelo ya que no los ha añadido aún. Sin embargo, puede inspeccionar el modelo recién creado usando el menú **Technical**. En el menú superior **Settings**, ve a **Technical | Database Structure | Models**, busca el modelo `todo.task` en la lista y haz clic en él para ver su definición:
 
-![Settings](file:img/2-02.jpg)
+![Settings](/img/2-02.jpg)
 
 Si todo va bien, se confirma que el modelo y los campos fueron creados. Si no puedes verlos aquí, intenta reiniciar el servidor con una actualización de módulo, como se describió anteriormente.
 
@@ -370,7 +370,7 @@ Su módulo aún no conoce el nuevo archivo de datos XML. Esto se hace agregándo
 
 Ahora necesita actualizar el módulo de nuevo para que estos cambios surtan efecto. Vaya al menú superior de **Todos** y debe ver su nueva opción de menú disponible:
 
-![Save](file:img/2-03.jpg)
+![Save](/img/2-03.jpg)
 
 Aunque no ha definido su vista de interfaz de usuario, al hacer clic en el menú **Todos** se abrirá un formulario generado automáticamente para su modelo, lo que le permitirá agregar y editar registros.
 
@@ -708,7 +708,7 @@ Si ejecuta las pruebas ahora, deberían fallar, así que se encargará de eso.
 
 Para obtener una imagen de qué información se necesita para agregar reglas de acceso a un modelo, utiliza el cliente web y ve a **Settings | Technical | Security | Access Controls List** :
 
-![Create](file:img/2-04.jpg)
+![Create](/img/2-04.jpg)
 
 ### Nota
 

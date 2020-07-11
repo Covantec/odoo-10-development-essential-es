@@ -13,7 +13,7 @@ Su aplicación de To-Do ahora permite a los usuarios gestionar de forma privada 
 
 Lo hará con un nuevo módulo para ampliar la aplicación To-Do previamente creada y agregar estas nuevas características utilizando los mecanismos de herencia. Esto es lo que espera lograr al final de este capítulo:
 
-![Mytodo](file:img/3-01.jpg)
+![Mytodo](/img/3-01.jpg)
 
 Este será su plan de trabajo para las extensiones de características que se implementarán:
 

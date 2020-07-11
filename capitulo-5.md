@@ -147,7 +147,7 @@ Pero Odoo también proporciona otros dos tipos de modelos que se utilizarán: mo
 Los modelos y campos creados a través de las clases Python tienen su metadata disponible a través de la interfaz de usuario. En el menú superior **Settings** navega al ítem de menú **Technical | Database Structure | Models**.
 Aquí, hallarás la lista de todos los modelos disponibles en la base de datos. Haciendo clic en un modelo en la lista, abrirá una forma con estos detalles:
 
-![Modelo_de_lista](file:img/5-01.jpg)
+![Modelo_de_lista](/img/5-01.jpg)
 
 esta es una buena herramienta para inspeccionar la estructura de un modelo, ya que en un lugar, puedes ver los resultados de la personaliación de diferentes módulos. En este caso, tal como lo puedes ver en en la esquina superior derecha en el campo **In Apps**, las definiciones `todo.task` para este modelo provienen de ambos módulos `todo_app` y `todo_user`.
 
@@ -310,7 +310,7 @@ Mirando de nuevo el diseño de su módulo, tiene estas relaciones:
 
 El siguiente diagrama de relación de entidad puede ayudar a visualizar las relaciones que está a punto de crear en el modelo. Las líneas que terminan con un triángulo representan muchos lados de las relaciones:
 
-![EntityRelationshipDiagram](file:img/5-02.jpg)
+![EntityRelationshipDiagram](/img/5-02.jpg)
 
 Añada los correspondientes campos de relación a las tareas pendientes en su archivo `todo_model.py`:
 

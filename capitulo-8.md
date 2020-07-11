@@ -309,7 +309,7 @@ import ipdb; ipdb.set_trace()
 
 Otro depurador alternativo es `pudb`. También soporta los mismos comandos que `pdb` y funciona en terminales sólo de texto, pero utiliza una pantalla gráfica similar a lo que puedes encontrar en un depurador IDE. La información útil, como las variables en el contexto actual y sus valores, está fácilmente disponible en la pantalla en sus propias ventanas:
 
-![debugger](file:img/9-01.jpg)
+![debugger](/img/9-01.jpg)
 
 Se puede instalar a través del gestor de paquetes del sistema o a través de `pip`, como se muestra aquí:
 

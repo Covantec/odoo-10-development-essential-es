@@ -138,7 +138,7 @@ Vale la pena repetir que la API externa de Odoo puede ser utilizada por la mayor
 
 Haga algo interesante con la API de RPC. Odoo proporciona una aplicación sencilla para notas. ¿Qué pasa si los usuarios pueden administrar sus notas personales directamente desde el escritorio de su computadora? Va a escribir una sencilla aplicación de Python para hacer eso, como se muestra en la siguiente captura de pantalla:
 
-![Notas](file:img/12-01.jpg)
+![Notas](/img/12-01.jpg)
 
 
 Para mayor claridad, lo dividirá en dos archivos: uno relacionado con las interacciones con el servidor backend, `note_api.py` y otro con la interfaz gráfica de usuario, `note_gui.py`.
