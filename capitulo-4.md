@@ -14,7 +14,7 @@ Un **identificador externo** (también llamado XML ID) es un identificador de ca
 
 Una de las razones es que al actualizar un módulo, sus archivos de datos se cargarán nuevamente en la base de datos y debe detectar los registros ya existentes para actualizarlos en lugar de crear nuevos registros duplicados.
 
-Otra razón que apoya los datos interrelacionados: los registros de datos deben ser capaces de hacer referencia a otros registros de datos. El identificador de base de datos real es un número secuencial asignado automáticamente por la base de datos, durante la instalación del módulo. Los identificadores externos proporcionan una forma de hacer referencia a un registro relacionado sin necesidad de saber de antemano qué ID de base de datos se asignará, lo que les permite definir las relaciones de datos en los archivos de datos Odoo.
+Otra razón que apoya los datos interrelacionados: los registros de datos deben ser capaces de hacer referencia a otros registros de datos. El identificador de base de datos real es un número secuencial asignado automáticamente por la base de datos, durante la instalación del módulo. Los identificadores externos proporcionan una forma de hacer referencia a un registro relacionado sin necesidad de saber de antemano qué ID de base de datos se asignará, lo que le permite definir las relaciones de datos en los archivos de datos Odoo.
 
 Odoo se encarga de traducir los nombres de identificadores externos en los IDs de base de datos reales asignados a ellos. El mecanismo detrás de esto es bastante simple: Odoo mantiene una tabla con el mapeo entre los identificadores externos nombrados y sus IDs de base de datos numéricos correspondientes: el modelo `ir.model.data`.
 
@@ -28,7 +28,7 @@ Podrá ver que los identificadores externos tienen una etiqueta **ID Completa**.
 
 Los identificadores externos deben ser únicos dentro de un módulo Odoo, por lo que no hay riesgo de que dos módulos entren en conflicto porque accidentalmente eligieron el mismo nombre de identificador. Para construir un identificador único global Odoo une el nombre de los módulos con el nombre del identificador externo real. Esto es lo que puede ver en el campo **ID Completo**.
 
-Cuando se utiliza un identificador externo en un archivo de datos, puedes elegir utilizar el identificador completo o simplemente el nombre del identificador externo. Por lo general, es más sencillo usar el nombre de identificador externo, pero el identificador completo les permite referenciar registros de datos de otros módulos. Al hacerlo, asegúrate de que esos módulos están incluidos en las dependencias del módulo, para asegurarse de que esos registros estén cargados antes de los nuestros.
+Cuando se utiliza un identificador externo en un archivo de datos, puedes elegir utilizar el identificador completo o simplemente el nombre del identificador externo. Por lo general, es más sencillo usar el nombre de identificador externo, pero el identificador completo le permite referenciar registros de datos de otros módulos. Al hacerlo, asegúrate de que esos módulos están incluidos en las dependencias del módulo, para asegurarse de que esos registros estén cargados antes de los nuestros.
 
 En la parte superior de la lista, tiene el identificador completo `todo_app.action_todo_task`. Esta es la acción de menú que creo para el módulo, al que también se hace referencia en el ítem de menú correspondiente. Al hacer clic en él, va a la vista de formulario con sus detalles; El identificador externo `action_todo_task` en el módulo `todo_app` mapea un ID de registro específico en el modelo `ir.actions.act_window`, `72` en este caso:
 
@@ -68,7 +68,7 @@ También puede marcar la casilla de verificación en el encabezado de la columna
 
 En versiones anteriores de Odoo, sólo los registros vistos en la pantalla (la página actual) se exportarían realmente. Desde Odoo 9, esta casilla de verificación cambió y marcar el checkbox en el encabezado exportará todos los registros que coincidan con el filtro actual, no sólo los que se muestran actualmente. Esto es muy útil para exportar grandes conjuntos de registros que no encajan en la pantalla.
 
-La opción **Export** les lleva a un formulario de diálogo, donde puede elegir qué exportar. La opción **Import-Compatible Export** (Importar exportación compatible) asegura que el archivo exportado se puede importar de nuevo a Odoo. Necesitará usar esto.
+La opción **Export** le lleva a un formulario de diálogo, donde puede elegir qué exportar. La opción **Import-Compatible Export** (Importar exportación compatible) asegura que el archivo exportado se puede importar de nuevo a Odoo. Necesitará usar esto.
 
 El formato de exportación puede ser CSV o Excel. Preferirá un archivo CSV para obtener una mejor comprensión del formato de exportación. A continuación, seleccionará las columnas que querrá exportar y haga clic en el botón **Export to File**. Esto iniciará la descarga de un archivo con los datos exportados:
 
@@ -101,7 +101,7 @@ Va a realizar una edición masiva en sus datos de tareas pendientes primero. Abr
 
 Como se mencionó anteriormente, la primera columna, id, proporciona un identificador único para cada fila. Esto permite actualizar los registros ya existentes en vez de duplicarlos cuando importo los datos de nuevo a Odoo. Para las nuevas filas añadidas al archivo CSV, puede elegir entre proporcionar un identificador externo de su elección, o dejar en blanco la columna id, se creará un nuevo registro para ellos.
 
-Después de guardar los cambios en el archivo CSV, haz clic en la opción **Import** (junto al botón **Create**) y se les presentará el asistente de importación.
+Después de guardar los cambios en el archivo CSV, haz clic en la opción **Import** (junto al botón **Create**) y se le presentará el asistente de importación.
 
 Allí, debe seleccionar la ubicación del archivo CSV en el disco y hacer clic en **Validate** para comprobar su exactitud. Ya que que el archivo a importar se basa en una exportación Odoo, lo más probable es que sea válido:
 
@@ -214,9 +214,9 @@ Ten en cuenta que la notación de barras en los nombres de campo no está dispon
 
 Cuando se repite la carga de datos, los registros cargados de la ejecución anterior se reescriben. Es importante tener en cuenta que esto significa que la actualización de un módulo sobrescribirá los cambios manuales que se pudieron haber realizado dentro de la base de datos. En particular, si las vistas se modificaron con las personalizaciones, estos cambios se perderán con la próxima actualización del módulo. El procedimiento correcto consiste en crear vistas heredadas para los cambios que necesita, como se describe en el Capítulo 3, *Herencia - Extendiendo las aplicaciones existentes*.
 
-Este comportamiento de re-importación es el predeterminado, pero se puede cambiar, de modo que cuando se actualiza un módulo, algunos registros de archivos de datos quedan intactos. Esto se hace mediante el atributo `noupdate="1"` del elemento `<odoo>` o `<data>`. Estos registros se crearán cuando se instale el módulo addon, pero en las actualizaciones de módulos posteriores no se les hará nada.
+Este comportamiento de re-importación es el predeterminado, pero se puede cambiar, de modo que cuando se actualiza un módulo, algunos registros de archivos de datos quedan intactos. Esto se hace mediante el atributo `noupdate="1"` del elemento `<odoo>` o `<data>`. Estos registros se crearán cuando se instale el módulo addon, pero en las actualizaciones de módulos posteriores no se le hará nada.
 
-Esto le permite asegurar que las personalizaciones hechas manualmente se mantengan a salvo de las actualizaciones de módulos. A menudo se utiliza con reglas de acceso a registros, lo que les permite adaptarse a las necesidades específicas de la implementación.
+Esto le permite asegurar que las personalizaciones hechas manualmente se mantengan a salvo de las actualizaciones de módulos. A menudo se utiliza con reglas de acceso a registros, lo que le permite adaptarse a las necesidades específicas de la implementación.
 
 Es posible tener más de una sección `<data>` en el mismo archivo XML. Podrá aprovechar esto para separar los datos para importar sólo uno, con `noupdate="1"`, y los datos para ser reimportados en cada actualización, con `noupdate="0"`.
 

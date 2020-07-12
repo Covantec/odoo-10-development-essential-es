@@ -345,7 +345,7 @@ Explorará estas posibilidades con más detalle.
 
 El método que uso antes para extender un modelo utiliza sólo el atributo `_inherit`. Definió una clase heredando el modelo `todo.task` y le agrego algunas características. El atributo de clase `_name` no se estableció explícitamente; Implícitamente, era `todo.task`.
 
-Sin embargo, el uso del atributo `_name` les permite crear un nuevo modelo copiando las características de las heredadas. Aquí hay un ejemplo:
+Sin embargo, el uso del atributo `_name` le permite crear un nuevo modelo copiando las características de las heredadas. Aquí hay un ejemplo:
 
 ```
 from odoo import models
@@ -432,7 +432,7 @@ Para el tercer punto, querrá agregar los widgets de red social en la parte infe
 </sheet>
 ```
 
-Los dos campos agregados aquí no han sido declarados explícitamente por nosotros, pero son proporcionados por el modelo `mail.thread`.
+Los dos campos agregados aquí no han sido declarados explícitamente por usted, pero son proporcionados por el modelo `mail.thread`.
 
 El paso final, que es el paso cuatro, consiste en establecer reglas de registro para seguidores: control de acceso a nivel de fila. Esto sólo es necesario si su modelo es requerido para limitar el acceso de otros usuarios a los registros. En este caso, querrá que cada registro de tarea también sea visible para cualquiera de sus seguidores.
 

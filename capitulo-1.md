@@ -454,7 +454,7 @@ También puede optar por usar un archivo de configuración específico, usando l
 
 ## Cambiando el puerto de escucha
 
-La opción de comando `--xmlrpc-port=<port>` les permite cambiar el puerto de escucha de una instancia de servidor desde el predeterminado 8069. Esto se puede usar para ejecutar más de una instancia al mismo tiempo, en la misma máquina.
+La opción de comando `--xmlrpc-port=<port>` le permite cambiar el puerto de escucha de una instancia de servidor desde el predeterminado 8069. Esto se puede usar para ejecutar más de una instancia al mismo tiempo, en la misma máquina.
 
 Va a probar esto. Abre dos ventanas de terminal. En el primero, ejecute esto:
 
@@ -487,7 +487,7 @@ $ ~/odoo-dev/odoo/odoo-bin --db-filter=^demo$
 
 ### Administrar los mensajes de registro del servidor
 
-La opción `--log-level` les permite establecer la verbosidad del registro. Esto puede ser muy útil para entender lo que está sucediendo en el servidor. Por ejemplo, para habilitar el nivel de registro de depuración, use la opción `--log-level=debug`.
+La opción `--log-level` le permite establecer la verbosidad del registro. Esto puede ser muy útil para entender lo que está sucediendo en el servidor. Por ejemplo, para habilitar el nivel de registro de depuración, use la opción `--log-level=debug`.
 
 Los siguientes niveles de registro pueden ser particularmente interesantes:
 
@@ -592,7 +592,7 @@ Después de eso, la página se vuelve a cargar y debería verse un icono de erro
 
 #### Consejo
 
-La opción **Technical** del menú les permite inspeccionar y editar todas las configuraciones Odoo almacenadas en la base de datos, desde la interfaz de usuario hasta la seguridad y otros parámetros del sistema. Aprenderás más sobre muchos de estos a lo largo del libro.
+La opción **Technical** del menú le permite inspeccionar y editar todas las configuraciones Odoo almacenadas en la base de datos, desde la interfaz de usuario hasta la seguridad y otros parámetros del sistema. Aprenderás más sobre muchos de estos a lo largo del libro.
 
 
 ## Instalación de módulos de terceros
@@ -604,7 +604,7 @@ Hacer nuevos módulos disponibles en una instancia Odoo para que puedan instalar
 
 Hay muchos módulos Odoo disponibles en Internet. La tienda de aplicaciones de Odoo en https://apps.odoo.com es un catálogo de módulos que se pueden descargar e instalar en su sistema. La **Odoo Community Association (OCA)** coordina las contribuciones de la comunidad y mantiene bastantes repositorios de módulos en GitHub en https://github.com/OCA/.
 
-Para agregar un módulo a una instalación de Odoo, podrá copiarlo en el directorio `addons` junto con los módulos oficiales. En su caso, el directorio `addons` está en `~/odoo-dev/odoo/addons/`. Esto podría no ser la mejor opción para nosotros, ya que su instalación de Odoo se basa en un repositorio de código controlado por versiones, y querrá mantenerlo sincronizado con el repositorio de GitHub.
+Para agregar un módulo a una instalación de Odoo, podrá copiarlo en el directorio `addons` junto con los módulos oficiales. En su caso, el directorio `addons` está en `~/odoo-dev/odoo/addons/`. Esto podría no ser la mejor opción para usted, ya que su instalación de Odoo se basa en un repositorio de código controlado por versiones, y querrá mantenerlo sincronizado con el repositorio de GitHub.
 
 Afortunadamente, puede usar ubicaciones adicionales para los módulos para que pueda mantener sus módulos personalizados en un directorio diferente, sin tenerlos mezclados con los oficiales.
 
@@ -626,9 +626,9 @@ Después de esto, tendrá un directorio nuevo `/todo_app` junto al directorio `/
 
 ### Configurandola ruta addons
 
-El servidor Odoo tiene una opción de configuración llamada `addons_path` para establecer dónde el servidor debe buscar módulos. De forma predeterminada, esto apunta al directorio `/addons`, donde se ejecuta el servidor Odoo.
+El servidor Odoo tiene una opción de configuración llamada `addons-path` para establecer dónde el servidor debe buscar módulos. De forma predeterminada, esto apunta al directorio `/addons`, donde se ejecuta el servidor Odoo.
 
-Podrá proporcionar no sólo una, sino una lista de directorios donde se pueden encontrar módulos. Esto les permite mantener sus módulos personalizados en un directorio diferente, sin tenerlos mezclados con los addons oficiales.
+Podrá proporcionar no sólo una, sino una lista de directorios donde se pueden encontrar módulos. Esto le permite mantener sus módulos personalizados en un directorio diferente, sin tenerlos mezclados con los addons oficiales.
 
 Va a iniciar el servidor con una ruta addons que incluye su nuevo directorio de módulos:
 

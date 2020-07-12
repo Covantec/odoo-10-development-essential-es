@@ -149,7 +149,7 @@ Se posicionará en su directorio de trabajo e iniciará el servidor con la confi
 $ ~/odoo-dev/odoo/odoo-bin -d todo --addons-path="custom-addons,odoo/addons" --save
 ```
 
-La opción `--save` guarda las opciones que utilizaste en un archivo de configuración. Esto les evita repetirlas cada vez que reiniciará el servidor: solo se ejecuta `~/odoo-dev/odoo/odoo-bin` y se utilizará la última opción guardada.
+La opción `--save` guarda las opciones que utilizaste en un archivo de configuración. Esto le evita repetirlas cada vez que reiniciará el servidor: solo se ejecuta `~/odoo-dev/odoo/odoo-bin` y se utilizará la última opción guardada.
 
 Observa atentamente el registro del servidor. Debe tener una línea `INFO? Odoo: addons paths: [...]`. Debe incluir su directorio de `custom-addons`.
 
@@ -170,7 +170,7 @@ En el menú superior de **Aplicaciones**, seleccione la opción **Actualizar Lis
 
 Asegúrate de que su sesión de cliente web está funcionando con la base de datos correcta. Puedes comprobarlo en la parte superior derecha: el nombre de la base de datos se muestra entre paréntesis, justo después del nombre de usuario. Una manera de aplicar la base de datos correcta es iniciar la instancia del servidor con la opción adicional `--db-filter=^MYDB$`.
 
-La opción **Aplicaciones** les muestra la lista de módulos disponibles. De forma predeterminada, muestra sólo los módulos de aplicación. Ya que ha creado un módulo de aplicación, no necesita eliminar ese filtro para verlo. Escribe `todo` en la búsqueda y debes ver su nuevo módulo, listo para ser instalado:
+La opción **Aplicaciones** le muestra la lista de módulos disponibles. De forma predeterminada, muestra sólo los módulos de aplicación. Ya que ha creado un módulo de aplicación, no necesita eliminar ese filtro para verlo. Escribe `todo` en la búsqueda y debes ver su nuevo módulo, listo para ser instalado:
 
 ![Installed](img/2-01.jpg)
 
@@ -802,7 +802,7 @@ Su módulo se ve bien. ¿Por qué no añadir un icono para que se vea aún mejor
 
 Estará reutilizando el icono de la aplicación existente **Notes**, por lo que deberá copiar el archivo `odoo/addons/static/description/icon.png` en el directorio `addons/todo_app/static/description`.
 
-Los siguientes comandos deben hacer ese truco para nosotros:
+Los siguientes comandos deben hacer ese truco para usted:
 
 ```
 $ mkdir -p ~/odoo-dev/custom-addons/todo_app/static/description

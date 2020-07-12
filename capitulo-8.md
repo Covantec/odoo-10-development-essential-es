@@ -4,7 +4,7 @@ Una buena parte del trabajo de un desarrollador es probar y depurar código. Las
 
 ## Pruebas de unidad
 
-Las pruebas automatizadas se aceptan generalmente como una mejor práctica en software. No solo les ayuda a asegurar que su código se implemente correctamente. Más importante aún, proporciona una red de seguridad para futuras mejoras de código o reescritura.
+Las pruebas automatizadas se aceptan generalmente como una mejor práctica en software. No solo le ayuda a asegurar que su código se implemente correctamente. Más importante aún, proporciona una red de seguridad para futuras mejoras de código o reescritura.
 
 En el caso de lenguajes de programación dinámica, como Python, ya que no hay ningún paso de compilación, los errores de sintaxis pueden pasar desapercibidos. Esto hace aún más importante que las pruebas de unidad pasen por tantas líneas de código como sea posible.
 
@@ -155,7 +155,7 @@ En Odoo 10 pruebas YAML ya no se utilizan, pero aquí es un ejemplo, desde el `0
 - !python {model: pos.make.payment}: | self.check(cr, uid, [ref('pos_make_payment_2')], context={'active_id': ref('pos_order_pos1')} )
 ```
 
-Las líneas que comienzan con un `!` Son etiquetas YAML, equivalentes a los elementos de la etiqueta que encontrará en los archivos XML. En el código anterior puede ver una etiqueta `¡ record`, equivalente a la etiqueta XML `<record>`, y una etiqueta `!python`, que les permite ejecutar código Python en un modelo, `pos.make.payment` en el ejemplo.
+Las líneas que comienzan con un `!` Son etiquetas YAML, equivalentes a los elementos de la etiqueta que encontrará en los archivos XML. En el código anterior puede ver una etiqueta `¡ record`, equivalente a la etiqueta XML `<record>`, y una etiqueta `!python`, que le permite ejecutar código Python en un modelo, `pos.make.payment` en el ejemplo.
 
 Como puedes ver, las pruebas YAML utilizan una sintaxis específica de Odoo que necesita aprendizaje. En comparación, las pruebas de Python utilizan el framework `unittest` existente, solo añadiendo clases envolventes específicas de Odoo como `TransactionCase`.
 
@@ -243,7 +243,7 @@ Este prompt funciona como un shell de Python, donde puede ejecutar cualquier exp
 
 + `d` (hacia abajo) se mueven hacia abajo en la pila de ejecución.
 
-El servidor Odoo también admite la opción `dev=all`. Si se activa, cuando se produce una excepción, el servidor entra en un modo *post mortem* en la línea correspondiente. Este es un prompt `pdb`, como el descrito anteriormente, que les permite inspeccionar el estado del programa en el momento en que se encontró el error.
+El servidor Odoo también admite la opción `dev=all`. Si se activa, cuando se produce una excepción, el servidor entra en un modo *post mortem* en la línea correspondiente. Este es un prompt `pdb`, como el descrito anteriormente, que le permite inspeccionar el estado del programa en el momento en que se encontró el error.
 
 Mientras que `pdb` tiene la ventaja de estar disponible fuera de la caja, puede ser bastante concisa, y existen algunas opciones más cómodas.
 
@@ -339,7 +339,7 @@ Otra opción a tener en cuenta es establecer los mensajes de registro de nivel d
 
 ### Inspeccionando procesos en ejecución
 
-También hay algunos trucos que les permiten inspeccionar un proceso Odoo en ejecución.
+También hay algunos trucos que le permiten inspeccionar un proceso Odoo en ejecución.
 
 Para eso primero necesita encontrar el ID de proceso correspondiente (PID). Para encontrar el PID, ejecuta otra ventana de terminal y escribe:
 

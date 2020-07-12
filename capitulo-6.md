@@ -400,7 +400,7 @@ Aquí está el elemento `<sheet>` expandido para incluir el título además de a
 </sheet>
 ```
 
-Aquí puede ver que uso elementos HTML normales, como `div`, `span`, `h1` y `h2`. El elemento `<label>` les permite controlar cuándo y dónde se mostrará. El atributo `for` identifica el campo del que deberá obtener el texto de la etiqueta. Otra posibilidad es utilizar el atributo de `string` para proporcionar un texto específico para utilizar en la etiqueta. Su ejemplo también utiliza el atributo `class="oe_edit_only"` para que sea visible sólo en modo de edición.
+Aquí puede ver que uso elementos HTML normales, como `div`, `span`, `h1` y `h2`. El elemento `<label>` le permite controlar cuándo y dónde se mostrará. El atributo `for` identifica el campo del que deberá obtener el texto de la etiqueta. Otra posibilidad es utilizar el atributo de `string` para proporcionar un texto específico para utilizar en la etiqueta. Su ejemplo también utiliza el atributo `class="oe_edit_only"` para que sea visible sólo en modo de edición.
 
 En algunos casos, como Socios o Productos, se muestra una imagen representativa en la esquina superior izquierda. Suponiendo que tenía un campo binario `my_image`, podrá añadir antes de la línea `<div class="oe_title">`, usando:
 
@@ -492,7 +492,7 @@ Los atributos que son genéricos y no dependen del tipo de campo son:
 
 + `placeholder` de posición es un texto de sugerencia para mostrar dentro del campo.
 
-+ `widget` les permite anular el widget predeterminado utilizado para el campo. Explorará los widgets disponibles en un momento.
++ `widget` le permite anular el widget predeterminado utilizado para el campo. Explorará los widgets disponibles en un momento.
 
 + `options` es una estructura de datos JSON con opciones adicionales para el widget y depende de lo que cada widget admite.
 
@@ -668,7 +668,7 @@ Los elementos de vista también admiten algunos atributos dinámicos que permite
 
 ### En los eventos de cambio
 
-El mecanismo de cambio **on change** les permite cambiar valores en otros campos de formulario cuando se cambia un campo particular. Por ejemplo, el cambio en un campo Producto puede establecer el campo Precio con un valor predeterminado siempre que se cambie el producto.
+El mecanismo de cambio **on change** le permite cambiar valores en otros campos de formulario cuando se cambia un campo particular. Por ejemplo, el cambio en un campo Producto puede establecer el campo Precio con un valor predeterminado siempre que se cambie el producto.
 
 En las versiones anteriores, los eventos de cambio se definieron en el nivel de vista, pero desde la versión 8.0 se definen directamente
 en la capa Modelo, sin necesidad de ninguna marcación específica en las vistas. Esto se hace creando métodos para realizar los cálculos,
@@ -693,7 +693,7 @@ Por ejemplo, para que el campo `refers_to` sea visible en todos los estados, exc
 
 El atributo `invisble` está disponible en cualquier elemento, no sólo campos. Por ejemplo, puede usarlo en páginas de block de notas y en elementos de grupo.
 
-Los `attrs` también pueden establecer valores para otros dos atributos: `readonly` y `required`. Estos sólo tienen sentido para los campos de datos, para que no sean editables o obligatorios. Esto les permite implementar alguna lógica básica del lado del cliente, como hacer un campo obligatorio dependiendo de otros valores de registro, como el Estado.
+Los `attrs` también pueden establecer valores para otros dos atributos: `readonly` y `required`. Estos sólo tienen sentido para los campos de datos, para que no sean editables o obligatorios. Esto le permite implementar alguna lógica básica del lado del cliente, como hacer un campo obligatorio dependiendo de otros valores de registro, como el Estado.
 
 ## Vistas de lista
 

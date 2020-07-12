@@ -97,7 +97,7 @@ class Stage(models.Model):
 
 Aquí ha creado los dos nuevos modelos que serán referenciados en las tareas pendientes.
 
-Centrándose en las etapas de la tarea, tiene una clase Python, Etapa, basada en la clase `models.Model`, que define un nuevo modelo Odoo llamado `todo.task.stage`. También tiene dos campos: `nombre y secuencia`. Podrá ver algunos atributos de modelo (prefijados con un subrayado) que son nuevos para nosotros. Echa un vistazo a ellos.
+Centrándose en las etapas de la tarea, tiene una clase Python, Etapa, basada en la clase `models.Model`, que define un nuevo modelo Odoo llamado `todo.task.stage`. También tiene dos campos: `nombre y secuencia`. Podrá ver algunos atributos de modelo (prefijados con un subrayado) que son nuevos para usted. Echa un vistazo a ellos.
 
 
 ## Atributos del modelo
@@ -112,7 +112,7 @@ Las clases de modelo pueden utilizar atributos adicionales que controlan algunos
 
 Para completar, hay un par de más atributos que se pueden utilizar en casos avanzados:
 
-+ `_rec_name` indica el campo a utilizar como la descripción del registro cuando se hace referencia desde campos relacionados, tales como una relación de varios a uno. De forma predeterminada, utiliza el campo de `nombre`, que es un campo común en los modelos. Pero este atributo les permite usar cualquier otro campo para ese propósito.
++ `_rec_name` indica el campo a utilizar como la descripción del registro cuando se hace referencia desde campos relacionados, tales como una relación de varios a uno. De forma predeterminada, utiliza el campo de `nombre`, que es un campo común en los modelos. Pero este atributo le permite usar cualquier otro campo para ese propósito.
 
 + `_table` es el nombre de la tabla de la base de datos que soporta el modelo. Por lo general, se deja que se calcule automáticamente, y es el nombre del modelo con los puntos reemplazados por subrayados. Pero es posible establecer para indicar un nombre de tabla específico.
 
@@ -410,9 +410,9 @@ class Tag(models.Model):
 
 ### Relaciones inversas Uno a muchos (One-to-many)
 
-Un inverso de un `Many2one` se puede agregar al otro extremo de la relación. Esto no tiene ningún impacto en la estructura de la base de datos real, pero les permite navegar fácilmente desde **un** lado de los **muchos** registros relacionados. Un caso de uso típico es la relación entre un encabezado de documento y sus líneas.
+Un inverso de un `Many2one` se puede agregar al otro extremo de la relación. Esto no tiene ningún impacto en la estructura de la base de datos real, pero le permite navegar fácilmente desde **un** lado de los **muchos** registros relacionados. Un caso de uso típico es la relación entre un encabezado de documento y sus líneas.
 
-En su ejemplo, una relación inversa `One2many` en Etapas les permite listar fácilmente todas las Tareas en esa Etapa. El código para agregar esta relación inversa a Etapas es:
+En su ejemplo, una relación inversa `One2many` en Etapas le permite listar fácilmente todas las Tareas en esa Etapa. El código para agregar esta relación inversa a Etapas es:
 
 ```
 class Stage(models.Model):

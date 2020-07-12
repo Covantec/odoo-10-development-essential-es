@@ -2,13 +2,13 @@
 
 Odoo comenzó como un sistema backend, pero la necesidad de una interfaz de frontend pronto se sintió. Las primeras características del portal, basadas en la misma interfaz que el backend, no eran muy flexibles ni amigables con dispositivos móviles.
 
-Para solucionar este vacío, la versión 8 introdujo nuevas características de sitio web, agregando un Sistema de Gestión de Contenidos (CMS) al producto. Esto les permitiría construir frontends hermosos y eficaces sin la necesidad de integrar un CMS de terceros.
+Para solucionar este vacío, la versión 8 introdujo nuevas características de sitio web, agregando un Sistema de Gestión de Contenidos (CMS) al producto. Esto le permitiría construir frontends hermosos y eficaces sin la necesidad de integrar un CMS de terceros.
 
 Aquí aprenderá cómo desarrollar sus propios módulos complementarios orientados al usuario, aprovechando la función de sitio web proporcionada por Odoo.
 
 ## Mapa de ruta
 
-Usted creará una página web en la que se enumerarán nuestras Tareas pendientes, lo que les permitirá navegar a una página detallada para cada tarea existente. También querrá poder proponer nuevas Tareas pendientes a través de un formulario web.
+Usted creará una página web en la que se enumerarán nuestras Tareas pendientes, lo que le permitirá navegar a una página detallada para cada tarea existente. También querrá poder proponer nuevas Tareas pendientes a través de un formulario web.
 
 Con esto podrá cubrir las técnicas esenciales para el desarrollo de sitios web: crear páginas dinámicas, pasar parámetros a otra página, crear formularios y manejar su validación y lógica de cálculo.
 
@@ -358,7 +358,7 @@ La plantilla de QWeb debe ser agregada por un archivo de datos, y puede agregarl
 </template>
 ```
 
-El código anterior utiliza la directiva `t-foreach` para mostrar una lista de tareas. La directiva `t-att` usada en la casilla de verificación de entrada les permite agregar o no el atributo *checked* dependiendo del valor `is_done`.
+El código anterior utiliza la directiva `t-foreach` para mostrar una lista de tareas. La directiva `t-att` usada en la casilla de verificación de entrada le permite agregar o no el atributo *checked* dependiendo del valor `is_done`.
 
 Usted tiene una entrada de casilla de verificación, y querrá que se compruebe si la tarea se realiza. En HTML, se comprueba una casilla de verificación en función de que tenga o no el atributo `checked`. Para ello uso la directiva `t-att-NAME` para renderizar dinámicamente el atributo `checked` dependiendo de una expresión. En este caso, la expresión se evalúa como `None`, QWeb omitirá el atributo, lo cual es conveniente para este caso.
 
@@ -481,9 +481,9 @@ Las clases CSS son necesarias para que el código JavaScript pueda realizar corr
 
 + `data-model_name` identifica el modelo al que escribir y se pasará al controlador `/website_form`.
 
-+ `data-success_page` es la URL a redireccionar después de una presentación de formulario correcta. En este caso, se les enviará de nuevo a la lista de tareas.
++ `data-success_page` es la URL a redireccionar después de una presentación de formulario correcta. En este caso, se le enviará de nuevo a la lista de tareas.
 
-No necesitará proporcionar su propio método de controlador para manejar el envío de formularios. La ruta `/website_form` lo hará por nosotros. Toma toda la información que necesita del formulario, incluyendo los atributos específicos que acaba de describir, y luego realiza validaciones esenciales en los datos de entrada, y crea un nuevo registro en el modelo de destino.
+No necesitará proporcionar su propio método de controlador para manejar el envío de formularios. La ruta `/website_form` lo hará por usted. Toma toda la información que necesita del formulario, incluyendo los atributos específicos que acaba de describir, y luego realiza validaciones esenciales en los datos de entrada, y crea un nuevo registro en el modelo de destino.
 
 Para casos de uso avanzado, puede forzar que se use un método de controlador personalizado. Para ello debe añadir un atributo `data-force_action` al elemento `<form>`, con la palabra clave para que el controlador objetivo a utilizar. Por ejemplo, `data-force_action="todo-custom"` tendría la solicitud para llamar a la URL `/website_form/todo-custom`. Entonces deberá proporcionar un método de controlador adjunto a esa ruta. Sin embargo, hacer esto quedará fuera de su alcance aquí.
 
@@ -587,7 +587,7 @@ Como se puede ver, para agregar un elemento de menú del sitio web solo necesita
 
 ## Adición de lógica personalizada
 
-Los formularios web les permiten conectar nuestras propias validaciones y cálculos al procesamiento de formularios. Esto se realiza mediante la implementación de un método `website_form_input_filter()` con la lógica del modelo de destino. Acepta un diccionario de valores, lo valida y realiza cambios en él y, a continuación, devuelve el diccionario de valores posiblemente modificado.
+Los formularios web le permiten conectar nuestras propias validaciones y cálculos al procesamiento de formularios. Esto se realiza mediante la implementación de un método `website_form_input_filter()` con la lógica del modelo de destino. Acepta un diccionario de valores, lo valida y realiza cambios en él y, a continuación, devuelve el diccionario de valores posiblemente modificado.
 
 Lo utilizará para implementar dos funciones: eliminar cualquier espacio inicial y final del título de la tarea e imponer que el título de la tarea tenga al menos tres caracteres.
 
@@ -621,6 +621,6 @@ Como de costumbre, debe importar este nuevo archivo de Python, añadiendo `from 
 
 ## Resumen
 
-Ahora debes tener un buen entendimiento sobre lo esencial de las características del sitio web. Usted ha visto cómo usar controladores web y plantillas QWeb para renderizar páginas web dinámicas. A continuación, aprendió a utilizar el complemento de sitio web y crear nuestras propias páginas para ello. Por último, ha introducido el complemento de formularios de sitios web que les ayudó a crear un formulario web. Estos deben proporcionarle las habilidades básicas necesarias para crear las características del sitio web.
+Ahora debes tener un buen entendimiento sobre lo esencial de las características del sitio web. Usted ha visto cómo usar controladores web y plantillas QWeb para renderizar páginas web dinámicas. A continuación, aprendió a utilizar el complemento de sitio web y crear nuestras propias páginas para ello. Por último, ha introducido el complemento de formularios de sitios web que le ayudó a crear un formulario web. Estos deben proporcionarle las habilidades básicas necesarias para crear las características del sitio web.
 
 A continuación, aprenderá cómo tener aplicaciones externas interactuar con nuestras aplicaciones Odoo.

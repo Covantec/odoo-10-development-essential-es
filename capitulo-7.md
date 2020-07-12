@@ -352,7 +352,7 @@ Usted ha visto los métodos de modelo más importantes usados para generar conju
 
 + `read([fields])` es similar al método `browse`, pero en lugar de un conjunto de registros, devuelve una lista de filas de datos con los campos dados como argumento. Cada fila es un diccionario. Proporciona una representación serializada de los datos que se pueden enviar a través de protocolos RPC y está destinado a ser utilizado por los programas cliente y no en la lógica del servidor.
 
-+ `search_read([domain], [fields], offset=0, limit=None, order=None)` realiza una operación de búsqueda seguida de una lectura en la lista de registros resultante. Se detina para ser utilizado por los clientes de RPC y les ahorra el viaje redondo adicional necesario al hacer una búsqueda `search` seguida de una lectura `read` en los resultados.
++ `search_read([domain], [fields], offset=0, limit=None, order=None)` realiza una operación de búsqueda seguida de una lectura en la lista de registros resultante. Se detina para ser utilizado por los clientes de RPC y le ahorra el viaje redondo adicional necesario al hacer una búsqueda `search` seguida de una lectura `read` en los resultados.
 
 + `load([fields], [data])` se utiliza para importar datos adquiridos de un archivo CSV. El primer argumento es la lista de campos a importar y se mapea directamente a una fila superior de CSV. El segundo argumento es una lista de registros, donde cada registro es una lista de valores de cadena para analizar e importar, y se asigna directamente a las filas y columnas de datos CSV. Implementa las características de importación de datos CSV descritas en el Capítulo 4, *Datos de Módulo*, como el soporte de identificadores externos. Se utiliza por la característica de **importación "Import"** de cliente web. Sustituye el método import_data obsoleto.
 
@@ -505,7 +505,7 @@ Ahora explorará cómo funciona el ORM y se enterará de las operaciones más co
 
 ### Consultando modelos
 
-Con `self`, sólo puede acceder al conjunto de registros del método. Pero la referencia de entorno `self.env` les permite acceder a cualquier otro modelo. Por ejemplo, `self.env['res.partner']` devuelve una referencia al modelo Partners (que en realidad es un conjunto de registros vacío). Podrá usar `search()` o `browse()` en él para generar conjuntos de registros.
+Con `self`, sólo puede acceder al conjunto de registros del método. Pero la referencia de entorno `self.env` le permite acceder a cualquier otro modelo. Por ejemplo, `self.env['res.partner']` devuelve una referencia al modelo Partners (que en realidad es un conjunto de registros vacío). Podrá usar `search()` o `browse()` en él para generar conjuntos de registros.
 
 El método `search()` toma una expresión de dominio y devuelve un conjunto de registros con los registros que coinciden con esas condiciones. Un dominio vacío `[]` devolverá todos los registros. Para obtener más detalles sobre las expresiones de dominio, consulta el Capítulo 6, *Vistas - Diseñando la interfaz de usuario*. Si el modelo tiene el campo especial `active`, por defecto sólo se considerarán los registros con `active=True`.
 
